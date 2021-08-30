@@ -26,8 +26,10 @@ floodfill: $(OBJS)
 clean:
 	rm -rf src/*.o src/*.d floodfill
 
-tar:
-	clean
+debug: CXXFLAGS = -DDEBUG -Wall -g -I inc
+debug: floodfill
+
+tar: clean
 	tar zcvf floodfill.tgz $(SOURCE) inc/*.h Makefile
 
 help:
