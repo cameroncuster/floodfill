@@ -11,5 +11,5 @@ Program is fully documented for ease of use, readability, and modification.
 
 ### Usage
 ```
-% floodfill Images/sierpinsky.ppm 400 400 255 255 255
+% floodfill image.ppm starting_row starting_column new_red_value new_green_value new_blue_value
 ```

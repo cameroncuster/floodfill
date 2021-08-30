@@ -18,7 +18,7 @@
 void usageStatement( )
 {
     cout <<
-        "prog3.exe image.ppm starting_row starting_column new_red_value new_green_value new_blue_value"
+        "floodfill image.ppm starting_row starting_column new_red_value new_green_value new_blue_value"
         << endl;
     // exit without fail
     exit( 0 );
