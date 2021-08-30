@@ -10,6 +10,8 @@ Program is fully documented for ease of use, readability, and modification.
 Before | After
 :-------------------------:|:-------------------------:
 ![PPM Image of Fractal, Sierpensky's Triangle before Flood-Fill](Images/sierpinsky_before.png) | ![PPM Image of Fractal, Sierpensky's Triangle after Flood-Fill](Images/sierpinsky_after.png)
+:-------------------------:|:-------------------------:
+![PPM Image of Fractal, Apollonian Packing before Flood-Fill](Images/apollonian_before.png) | ![PPM Image of Fractal, Apollonian Packing after Flood-Fill](Images/apollonian_after.png)
 
 ### Usage
 ```
