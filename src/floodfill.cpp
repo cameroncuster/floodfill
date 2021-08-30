@@ -5,9 +5,7 @@
 ******************************************************************************/
 
 /** ***************************************************************************
- * @mainpage Program 3 - Recursive Flood Fill
- *
- * @section course_section Course Information
+ * @mainpage Recursive Flood Fill
  *
  * @authors Cameron Custer
  *
@@ -44,14 +42,10 @@
  *
  * @par Usage
    @verbatim
-   C:\> prog3.exe image.ppm starting_row starting_column new_red_value new_green_value new_blue_value
+   C:\> floodfill image.ppm starting_row starting_column new_red_value new_green_value new_blue_value
    @endverbatim
  *
  * @section todo_bugs_modification_section Todo, Bugs, and Modifications
- *
- * @par Modifications and Development Timeline:
- *      <a href="https://gitlab.mcs.sdsmt.edu/101061877/csc215f20programs/-/commits/master" target=_blank>
- *      Gitlab Commit Log</a>
  *
  *****************************************************************************/
 #include "netPBM.h"
