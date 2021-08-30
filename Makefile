@@ -24,7 +24,7 @@ floodfill: $(OBJS)
 	$(LINK) -o $@ $^
 
 clean:
-	rm -rf src/*.o src/*.d
+	rm -rf src/*.o src/*.d floodfill
 
 tar:
 	clean
