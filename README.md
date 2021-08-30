@@ -6,8 +6,9 @@ from the command line.
 Program is fully documented for ease of use, readability, and modification.
 
 ## Example
-![PPM Image of Fractal, Sierpensky's Triangle before Flood-Fill](Images/sierpinsky_before.ppm)
-![PPM Image of Fractal, Sierpensky's Triangle after Flood-Fill](Images/sierpinsky_after.ppm)
+**Converted from PPM to PNG format for display**
+![PPM Image of Fractal, Sierpensky's Triangle before Flood-Fill](Images/sierpinsky_before.png)
+![PPM Image of Fractal, Sierpensky's Triangle after Flood-Fill](Images/sierpinsky_after.png)
 
 ### Usage
 ```
