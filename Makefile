@@ -1,6 +1,10 @@
-SOURCE = src/floodfill.cpp \
-		 src/imageFileIO.cpp \
-		 src/memory.cpp
+SOURCE_DIR = src
+
+SOURCE = $(SOURCE_DIR)/floodfill.cpp \
+		 $(SOURCE_DIR)/imageFileIO.cpp \
+		 $(SOURCE_DIR)/memory.cpp
+
+INCLUDE_DIR = inc
 
 OBJS = $(SOURCE:.cpp=.o)
 
@@ -11,7 +15,7 @@ GCC = g++
 LINK = g++
 
 # Compiler flags
-CFLAGS = -Wall -O3 -I inc
+CFLAGS = -Wall -O3 -I $(INCLUDE_DIR)
 CXXFLAGS = $(CFLAGS)
 
 .PHONY: clean
@@ -24,13 +28,13 @@ floodfill: $(OBJS)
 	$(LINK) -o $@ $^
 
 clean:
-	rm -rf src/*.o src/*.d floodfill
+	rm -rf $(SOURCE_DIR)/*.o $(SOURCE_DIR)/*.d floodfill
 
-debug: CXXFLAGS = -DDEBUG -Wall -g -I inc
+debug: CXXFLAGS = -DDEBUG -Wall -g -I $(INCLUDE_DIR)
 debug: floodfill
 
 tar: clean
-	tar zcvf floodfill.tgz $(SOURCE) inc/*.h Makefile
+	tar zcvf floodfill.tgz $(SOURCE) $(INCLUDE_DIR)/*.h Makefile
 
 help:
 	@echo " make all   - builds the main target"
